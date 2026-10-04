@@ -1,0 +1,2 @@
+-r requirements-rabbitmq.txt
+psycopg[binary]>=3.2,<4.0

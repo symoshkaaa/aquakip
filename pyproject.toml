@@ -1,0 +1,16 @@
+[project]
+name = "aquakip-procurement-service"
+version = "0.1.0"
+description = "Aqua Kip procurement service"
+requires-python = ">=3.11"
+dependencies = [
+    "Django>=5.0,<6.0",
+    "djangorestframework>=3.15,<4.0",
+]
+
+[tool.django]
+settings_module = "procurement_service.settings"
+
+[project.optional-dependencies]
+rabbitmq = ["pika>=1.3,<2.0"]
+integration = ["pika>=1.3,<2.0", "psycopg[binary]>=3.2,<4.0"]
